@@ -1,0 +1,103 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CssMissingSemicolon" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="JSTypeOfValues" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="JSUndeclaredVariable" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="LocalVariableNamingConventionJS" enabled="false" level="WEAK WARNING" enabled_by_default="false">
+      <option name="m_regex" value="[a-z][A-Za-z]*" />
+      <option name="m_minLength" value="1" />
+      <option name="m_maxLength" value="32" />
+    </inspection_tool>
+    <inspection_tool class="LoggerInitializedWithForeignClass" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="loggerClassName" value="org.apache.log4j.Logger,org.slf4j.LoggerFactory,org.apache.commons.logging.LogFactory,java.util.logging.Logger" />
+      <option name="loggerFactoryMethodName" value="getLogger,getLogger,getLog,getLogger" />
+    </inspection_tool>
+    <inspection_tool class="PhpAssignmentInConditionInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PhpDivisionByZeroInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PhpIncludeInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PhpUndefinedClassConstantInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="PhpUndefinedConstantInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="PhpUndefinedFieldInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="PhpUndefinedFunctionInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="PhpVariableVariableInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="SSBasedInspection" enabled="true" level="ERROR" enabled_by_default="true">
+      <replaceConfiguration name="type attribute of script tag not needed" text="&lt;$tag$ type=&quot;$default$&quot; $attribute$&gt;$content$&lt;/$tag$&gt;" recursive="false" caseInsensitive="false" type="HTML" reformatAccordingToStyle="true" shortenFQN="false" useStaticImport="true" replacement="&lt;$tag$ $attribute$&gt;$content$&lt;/$tag$&gt;">
+        <constraint name="tag" regexp="script|style|random" within="" contains="" />
+        <constraint name="attribute" minCount="0" maxCount="2147483647" within="" contains="" />
+        <constraint name="value" within="" contains="" />
+        <constraint name="__context__" target="true" within="" contains="" />
+        <constraint name="text" regexp=".*" minCount="0" maxCount="2147483647" within="" contains="" />
+        <constraint name="content" minCount="0" maxCount="2147483647" within="" contains="" />
+        <constraint name="attr" within="" contains="" />
+        <constraint name="invalidTag" regexp="javascript|css" within="" contains="" />
+        <constraint name="defau" within="" contains="" />
+        <constraint name="default" regexp="text/javascript|text/css" within="" contains="" />
+      </replaceConfiguration>
+      <searchConfiguration name="Deprecated attr 'width'" text="&lt;$tag$ $attribute$ /&gt;" recursive="false" caseInsensitive="false" type="HTML">
+        <constraint name="tag" regexp="table" within="" contains="" />
+        <constraint name="attribute" regexp="align|bgcolor|border|cellpadding|cellspacing|frame|rules|width" maxCount="2147483647" target="true" within="" contains="" />
+        <constraint name="value" within="" contains="" />
+        <constraint name="__context__" within="" contains="" />
+      </searchConfiguration>
+      <searchConfiguration name="Deprecated attr for body tag" text="&lt;$tag$ $attribute$ /&gt;" recursive="false" caseInsensitive="false" type="HTML">
+        <constraint name="tag" regexp="body" within="" contains="" />
+        <constraint name="attribute" regexp="alink|link|vlink|text|bacground|bgcolor" maxCount="2147483647" target="true" within="" contains="" />
+      </searchConfiguration>
+      <searchConfiguration name="Deprecated attribute" text="&lt;$tag$ $attribute$ /&gt;" recursive="false" caseInsensitive="true" type="HTML">
+        <constraint name="tag" regexp="a|link" within="" contains="" />
+        <constraint name="attribute" regexp="rev|charset|shape|coords|target" maxCount="2147483647" target="true" within="" contains="" />
+      </searchConfiguration>
+      <searchConfiguration name="html5 deprecated attributes" text="&lt;$tag$ $attribute$ /&gt;" recursive="false" caseInsensitive="true" type="HTML">
+        <constraint name="tag" regexp="img" within="" contains="" />
+        <constraint name="attribute" regexp="hspace|vspace|name|align|longdesc" maxCount="2147483647" target="true" within="" contains="" />
+        <constraint name="__context__" within="" contains="" />
+      </searchConfiguration>
+      <replaceConfiguration name="link type tag not needed" text="&lt;link type=&quot;text/css&quot; $attribute$&gt;" recursive="false" caseInsensitive="false" type="HTML" reformatAccordingToStyle="true" shortenFQN="false" useStaticImport="true" replacement="&lt;link $attribute$&gt;">
+        <constraint name="tag" regexp="script|style|random" within="" contains="" />
+        <constraint name="attribute" minCount="0" maxCount="2147483647" within="" contains="" />
+        <constraint name="__context__" target="true" within="" contains="" />
+        <constraint name="content" minCount="0" maxCount="2147483647" within="" contains="" />
+        <constraint name="default" regexp="text/javascript|text/css" within="" contains="" />
+      </replaceConfiguration>
+      <searchConfiguration name="table 'width' attribute not supported" text="&lt;$tag$ $attribute$ /&gt;" recursive="false" caseInsensitive="true" type="JAVA">
+        <constraint name="tag" regexp="table" within="" contains="" />
+        <constraint name="attribute" regexp="width" target="true" within="" contains="" />
+      </searchConfiguration>
+      <searchConfiguration name="table cellpadding/cellspacing" text="&lt;$tag$ $attribute$ /&gt;" recursive="false" caseInsensitive="true" type="HTML">
+        <constraint name="tag" regexp="table" within="" contains="" />
+        <constraint name="attribute" regexp="cellpadding|cellspacing" maxCount="2147483647" target="true" within="" contains="" />
+      </searchConfiguration>
+      <replaceConfiguration name="Unexpected parentheses on include" text="include_once('$file$');" recursive="false" caseInsensitive="true" type="JAVA" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="include_once '$file$';">
+        <constraint name="file" within="" contains="" />
+        <constraint name="__context__" target="true" within="" contains="" />
+      </replaceConfiguration>
+      <replaceConfiguration name="Unexpected parentheses on require" text="require_once('$file$');" recursive="false" caseInsensitive="true" type="JAVA" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="require_once '$file$';">
+        <constraint name="file" within="" contains="" />
+      </replaceConfiguration>
+      <replaceConfiguration name="'text/css' type for link tag is redundant" text="&lt;$tag$ type=&quot;text/css&quot; $moreattributes$&gt;" recursive="false" caseInsensitive="true" type="HTML" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="&lt;$tag$ $moreattributes$&gt;">
+        <constraint name="tag" regexp="link" within="" contains="" />
+        <constraint name="someattributes" regexp="text/css" minCount="0" maxCount="2147483647" negateName="true" within="" contains="" />
+        <constraint name="attributes" within="" contains="" />
+        <constraint name="moreattributes" maxCount="2147483647" within="" contains="" />
+      </replaceConfiguration>
+      <searchConfiguration name="CSS Attribute Order should be alphabetical" text="$words$" recursive="true" caseInsensitive="true" type="CSS">
+        <constraint name="style" within="" contains="" />
+        <constraint name="decorator" within="" contains="" />
+        <constraint name="decorators" maxCount="2147483647" within="" contains="" />
+        <constraint name="attribute" within="" contains="" />
+        <constraint name="attribute_" within="" contains="" />
+        <constraint name="attribute1" maxCount="2147483647" within="" contains="" />
+        <constraint name="attribute2" regexp="float" within="" contains="" />
+        <constraint name="__context__" target="true" within="" contains="" />
+        <constraint name="selector" within="" contains="" />
+        <constraint name="words" within="" contains="" />
+      </searchConfiguration>
+    </inspection_tool>
+    <inspection_tool class="SpellCheckingInspection" enabled="true" level="TYPO" enabled_by_default="true">
+      <option name="processCode" value="false" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="false" />
+    </inspection_tool>
+  </profile>
+</component>

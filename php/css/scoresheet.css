@@ -1,0 +1,72 @@
+.card {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.description {
+  width: 40%;
+  margin-bottom: 5px;
+}
+
+.actionbar {
+  padding-top: 20px;
+}
+
+.name {
+  font-size: 14px;
+  max-width: 120px;
+  width: 120px;
+}
+
+.golfer .name {
+  font-weight: bold;
+  width: 120px;
+}
+
+.team .name {
+  font-style: italic;
+  text-align: center;
+}
+
+.team .hole {
+  padding: 0px;
+  margin: 0px;
+  width: 14px;
+  text-align: center;
+}
+
+.heading .label {
+  max-width: 120px;
+  width: 120px;
+  text-align: right;
+  font-style: italic;
+  margin-right: 34px;
+  padding-right: 4px;
+}
+.heading input {
+  font-size: 14px;
+  width: 50px;
+  text-align: center;
+  background: lightsteelblue;
+}
+
+.calc, .handicap {
+  font-size: 14px;
+  width: 30px;
+  text-align: center;
+}
+
+.golfer .hole {
+  font-size: 14px;
+  width: 50px;
+  text-align: center;
+}
+.narrow-font {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.wide-font {
+  font-family: 'Diplomata', cursive;
+}
+.set-width {
+  width: 220px;
+}
